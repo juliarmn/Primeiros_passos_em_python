@@ -32,3 +32,15 @@ cost = 50
 print(f'O lucro foi {gain} e o custo foi {cost}')
 
 #Casting de variáveis:
+gain = input('Digite o lucro da empresa\n')
+cost = input('Digite os custos da empresa\n')
+print(type(gain))
+print(type(cost))
+#gain e cost foi considerado string, então não conseguimos fazer operações, faremos o casting para transformar para float
+#Transformado logo no input
+gain = float(input('Digite o lucro da empresa\n'))
+cost = float(input('Digite os custos da empresa\n'))
+print(type(gain))
+print(type(cost))
+print('O faturamento foi ', gain-cost)
+
