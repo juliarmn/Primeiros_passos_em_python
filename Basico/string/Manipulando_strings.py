@@ -33,24 +33,6 @@ print(email[7:13])#Imprime do índice 7 até o índice 12
 #Transformar em string:
 Valor = 5.5
 print('O valor do produto é ' + str(valor))
-
-
-#Formatações com o format: pode combinar eles
-#{:<tam_texto} texto alinhado à esquerda do tam_texto caracteres
-#{:>tam_texto} texto alinhado à direita do tam_texto caracteres
-#{:^tam_texto} texto alinhado no centro de acordo com o tam_texto
-#{:+} coloca sempre o sinal do número (+ ou -)
-#{:,} coloca a vírgula como separador de milhar
-#{:2f} coloca 2 casas decimais em f -> número float
-#{:2%} coloca em formato de percentual, com 2 casas decimais
-#{:,.2f} formato de moeda
-
-
-#Função roun():
-#Faz arredondamento
-#roun(valor, 2) -> arredonda o valor em 2 casas decimais
-
-
 #Sinal de +: concatenar as strings
 
 #Format:
@@ -149,3 +131,19 @@ print(nome_e_sobrenome.title())
 #Texto todo em letra maiúscula:
 cod = 'asdasdasdasd'
 print(cod.upper())
+
+
+#Formatações com o format: pode combinar eles
+#{:<tam_texto} texto alinhado à esquerda do tam_texto caracteres
+#{:>tam_texto} texto alinhado à direita do tam_texto caracteres
+#{:^tam_texto} texto alinhado no centro de acordo com o tam_texto
+#{:+} coloca sempre o sinal do número (+ ou -)
+#{:,} coloca a vírgula como separador de milhar
+#{:2f} coloca 2 casas decimais em f -> número float
+#{:2%} coloca em formato de percentual, com 2 casas decimais
+#{:,.2f} formato de moeda
+
+
+#Função round():
+#Faz arredondamento
+#round(valor, 2) -> arredonda o valor em 2 casas decimais
