@@ -43,3 +43,26 @@ cost = float(input('Digite os custos da empresa\n'))
 print(type(gain))
 print(type(cost))
 print('O faturamento foi ', gain-cost)
+#Condições:
+if condição:
+  print('Condição atingida')
+else:
+  print('Condição não atingida')
+#Podemos também colocar condição dentro de condição
+#Exemplo básico:
+taxa = 0.3
+if taxa < 0.3:
+  print('Taxa < 0.3')
+elif taxa == 0.3:
+  print('Taxa = 0.3')
+else:
+  print('Taxa > 0.3')
+#Comparadores:
+#==: igual
+#!=: diferente
+#> ou >=: maior ou maior igual
+#< ou <=: menor ou menor igual
+#not: caso contrário, negação
+#in: verifica se a substring existe naquela string
+#and: e
+#or: ou
