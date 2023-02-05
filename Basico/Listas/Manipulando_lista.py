@@ -61,3 +61,40 @@ todas_comidas = lista_comidas + novas_comidas
 print(todas_comidas)
 #No append colocaria uma lista dentro de uma lista
 
+#Formas de printar:
+#Método Join:
+livros = ['Os demônios', 'Inferno de Dante', 'Mobby Dick', 'Alice no País das Maravilhas']
+print(';'.join(livros))#Separa cada um com ;
+print('\n'.join(livros))#Um em cada linha
+#Método split:
+livros = 'Os demônios, Inferno de Dante, Mobby Dick, Alice no País das Maravilhas'
+lista = livros.split(', ')#Vírgula espaço, retira a vírgula e o espaço depois dela
+print(lista)
+
+#Métodos de listas:
+#lista.clear(): Retira todos os elementos da lista
+#list.count(valor): Quantas vezes aquele elemento aparece na lista
+#list.sort(reverse=False): Ordena os valores da lista em ordem crescente, ou alfabética, (reverse=False) ou decrescente (reverse=True).
+#list.reverse(): Inverte a ordem de elementos na lista
+#list.copy(): Copia uma lista em outra
+
+#Copiar listas:
+lista_1 = ['A', 'BA', 'AB']
+lista_2 = lista_1
+print(lista_1)
+print(lista_2)
+#Não cria nova lista, uma modificação em uma modifica outra
+#Se quiser separados, list.copy():
+#Outra forma:
+lista_2 = lista[:]#Igual list.copy()
+
+#Nested list:
+#Matriz:
+vendas = [
+         [100, 90],
+         [50, 5000],
+         [400, 70],
+         [1, 2344],
+         ]
+#Listas de listas: manipulação como as listas acima
+#Quando precisar coloca 2 índices, como: vendas[1][1]
