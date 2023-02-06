@@ -52,7 +52,7 @@ print('Mais vendido: {} unidades;\nMenos  vendido: {} unidades'.format(mais_vend
 
 #Juntar 2 listas:
 lista_comidas = ['macarrao', 'arroz', 'bolo', 'carne']
-novas_comiidas = ['feijão', 'biscoito']
+novas_comidas = ['feijão', 'biscoito']
 #Método extend:
 lista_comidas.extend(novas_comidas)
 print(lista_comidas)
