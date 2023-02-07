@@ -30,3 +30,15 @@ for i in range(tam):
     continue
   else: 
     print(fruta[i])
+
+    
+#while:
+#while(condição): -> executa o codigo enquanto for satisfeito
+#Deve incrementar o índice
+cor = input('Digite uma cor: ')
+cores = []
+while cor != '':
+  cores.append(cor)
+  cor = input('Digite outra cor: (Para sair basta não inserir cor nenhuma e dar enter)\n')
+print('As cores foram: ')
+print(cores)
