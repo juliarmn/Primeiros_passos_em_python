@@ -48,3 +48,40 @@ for chave in dicionario:
   #comandos
 
 #Métodos dos dicionários:
+#Método items:
+itens_dicionario = dicionario.items()#Pega todos os itens de um dicionário
+#Ou:
+for item in dicionario.items():
+  print(item)
+#Ou, com unpacking:
+for produto, preco in vendas.items():
+  print('{}; {}'.format(produto, preco))
+#keys:
+chaves = dicionario.keys()
+#Apresenta só as chaves
+#Ao adicionar ou retirar valores, as chaves também são atualizadas e modicficadas -> não aplica todos os métodos da lista em python
+#Se precisar transformar em lista, usa o .list()
+
+#Values:
+valores = dicionario.values()
+#Para transformar em lista faz
+print(list(valores))#idem para chaves
+
+#Transformando listas em dicionários:
+#1-Dicionarios com valores padrões:
+#Método from keys:
+produtos = ['a', 'b', 'c', 'd', 'e', 'f']
+dicionario = dict.fromkeys(produtos, 0)#Valor padrão para os valores
+#2- Dicionários a partir de uma lista de tupla:
+#Método dict:
+dicionario = dict(lista_tuplas)
+#3-Duas listas:
+#Primeiro transforma as duas listas em uma única lista de tuplas
+#Segundo usa o dict
+produtos = ['a', 'b', 'c', 'd', 'e', 'f']
+vendas = [11, 12, 13, 14, 15, 16]
+#Transformar em tupla:
+lista_de_tuplas = zip(produtos, vendas)#Método zip
+#Tranforma com dict em dicionário
+dicionario_vendas = dict(lista_de_tuplas)
+#Por dicionário, acessamos dois valores de uma vez só (vantagem)
