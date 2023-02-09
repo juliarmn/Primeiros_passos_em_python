@@ -29,3 +29,14 @@ for item in enumerate(num_vendas):
 #Ou seja, o enumerate transforma os valores em uma tupla
 
 #Lista de tuplas
+vendas = [
+('20/12/21', 'amarelo', 'caderno', 50, 4000)
+('21/12/21', 'verde', 'lápis', 5, 5000)
+('20/11/22', 'vermelho', 'caneca', 45, 300)
+]
+
+faturamento_1 = vendas[0][3] * vendas[0][4]
+#Unpacking
+data, cor, produto, valor_unitario, quantidade = vendas[0]
+faturamento = valor_unitario * quantidade
+
