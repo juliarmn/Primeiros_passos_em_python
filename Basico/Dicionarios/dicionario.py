@@ -43,3 +43,8 @@ del vendas
 #Deletar os índices, mas dicionário ainda existe:
 vendas.clear()
 
+#for com dicionários:
+for chave in dicionario:
+  #comandos
+
+#Métodos dos dicionários:
