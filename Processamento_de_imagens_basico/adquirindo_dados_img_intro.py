@@ -23,3 +23,24 @@ print(imagem)
 
 cv2.imshow("Imagem", imagem)#Mostra a imagem muito rapidamente
 cv2.waitKey(0)#Permite a visualização da imagem até uma tecla ser apertada
+
+#Mostrar de 3 em 3 o valor de cada pixel da imagem:
+#Extração de cada pixel
+for i in range(0, imagem.shape[0]):
+  for j in range(0, imagem.shape[1]):
+    print(imagem[i][j])
+
+#Extração de cada canal de imagem:
+for i in range(0, imagem.shape[0]):
+  for j in range(0, imagem.shape[1]):
+    for h in range(0, 3):
+      print(imagem[i][j][h])
+
+#shape[0], shape[1], shape[2]:
+#Imagens preto e branco tem menos canais de cor, por exemplo
+#shape[0]: altura em pixel da imagem
+#shape[1]: largura da imagem em pixel
+#shape[2]: canais de cores
+print(imagem.shape[0])
+print(imagem.shape[1])
+print(imagem.shape[2])
