@@ -11,3 +11,15 @@ import cv2
 #É uma matriz tridimensional
 #Método imread() -> cv2:
 #Pega a imagem e transforma ela em uma matriz tridimensional RGB
+
+#imagem.jpg -> mesmo diretório:
+#Achar o diretorio atual da imagem, caso precise:
+import os
+cwd = os.getcwd()
+cwd
+
+imagem = cv2.imread("imagem.jpg")#BGR - open cv
+print(imagem)
+
+cv2.imshow("Imagem", imagem)#Mostra a imagem muito rapidamente
+cv2.waitKey(0)#Permite a visualização da imagem até uma tecla ser apertada
