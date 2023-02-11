@@ -12,7 +12,9 @@ cv2.waitKey(0)
 imagem = cv2.imread("imagem.jpg")
 (B, G, R) = cv2.split(imagem)#Separa a imagem em suas cores ->matriz tridimensional vira uma matriz única sem misturar suas cores
 cv2.imshow("Imagens", B)
+cv2.waitKey(0)
 cv2.imshow("Imagens", G)
+cv2.waitKey(0)
 cv2.imshow("Imagens", R)
 cv2.waitKey(0)
 #Não sai imagem  colorida -> mais azul = branco, menos azul = preto
