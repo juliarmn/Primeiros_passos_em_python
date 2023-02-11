@@ -77,7 +77,7 @@ cv2.waitKey(0)
 #Escrevendo texto em cima da imagem:
 #Usa um método do open cv
 imagem = cv2.imread("imagem.jpg")#BGR - open cv
-fonte = cv2.FONT_HERSHEY_COMPLEX#Fonte da palavra
+fonte = cv2.FONT_HERSHEY_PLAIN#Fonte da palavra
 cv2.putText(imagem, "Jua", (50, 50), fonte, 2, (255,255,255), 2)#imagem, texto, pixel onde inicia, fonte, expessura, cor, tamanho
 cv2.imshow("Imagem", imagem)
 cv2.waitKey(0)
