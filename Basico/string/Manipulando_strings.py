@@ -45,7 +45,7 @@ print('{0}  {1}  {0} '.format(valor, custo))#Imprime valor custo valor
 texto = 'O valor do produto é {}'
 print(texto.format(valor))
 
-#Udo do %:
+#Uso do %:
 print('O valor do produto é: %f; \nO custo de produção é: %f' % (valor, custo))
 #%s para string
 
@@ -140,7 +140,7 @@ print(cod.upper())
 #{:+} coloca sempre o sinal do número (+ ou -)
 #{:,} coloca a vírgula como separador de milhar
 #{:2f} coloca 2 casas decimais em f -> número float
-#{:2%} coloca em formato de percentual, com 2 casas decimais
+#{:.2%} coloca em formato de percentual, com 2 casas decimais
 #{:,.2f} formato de moeda
 
 
