@@ -23,3 +23,4 @@ def padroniza_cod(codigos, padrao = 'M'):#padroniza tudo para letra maiuscula
     lista[i] = item
 return codigos
      
+#Lembre, com return, a function encerra imediatamente
