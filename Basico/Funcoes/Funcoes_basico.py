@@ -38,3 +38,6 @@ def multiplicacao_divisao (num_1, num_2):
 #Annotations: focado nos parâmetros e resposta da função
 
 #Lembre de tratar erros em funçẽs -> pode usar try, except
+#except (tipo específico except) ('')
+#Uso do else após o try e except: isola a linha de código que pode dar erro
+#finaly: faz independente de dar erro
