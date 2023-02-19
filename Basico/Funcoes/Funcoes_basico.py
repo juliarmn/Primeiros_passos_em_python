@@ -31,5 +31,10 @@ def multiplicacao_divisao (num_1, num_2):
   multiplicacao = num_1 * num_2
   divisao = num_1 * num_2
   return(multiplicacao, divisao)#Retornou uma tupla -> não precisa dos (), pois por padrão ele retorna uma tupla
+#shift + tab: mostra dados sobre a função
+#Docstrings e annotations: organização do código
+#Docstrings dizem o que a função faz e seus argumentos/parâmetros
+#Coloca entre 3 aspas: explica o que ela faz, ''' ''', parâmetros e por fim os argumentos->organizado
+#Annotations: focado nos parâmetros e resposta da função
 
-
+#Lembre de tratar erros em funçẽs -> pode usar try, except
