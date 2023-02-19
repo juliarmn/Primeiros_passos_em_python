@@ -41,3 +41,13 @@ def multiplicacao_divisao (num_1, num_2):
 #except (tipo específico except) ('')
 #Uso do else após o try e except: isola a linha de código que pode dar erro
 #finaly: faz independente de dar erro
+
+#Position argument:
+#Uso do asterisco: * -> passa quantos argumentos quiser (indefinido)
+def soma(*num):
+  soma = 0
+  for numero in num:
+    soma += numero
+  return soma
+
+print(soma(1, 2, 44, 55, 6, 77, 8, 90))
