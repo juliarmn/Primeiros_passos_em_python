@@ -63,3 +63,4 @@ def preco_prod(preco, **adicional)
   return preco
 
 print('preco_prod(1000, desconto = 0.1))
+#Trabalhou com o dicionário
