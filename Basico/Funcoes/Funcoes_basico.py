@@ -64,3 +64,8 @@ def preco_prod(preco, **adicional)
 
 print('preco_prod(1000, desconto = 0.1))
 #Trabalhou com o dicionário
+#Primeiro passa os argumentos de posição e depois os de keywords 
+#Sempre argumentos individuais vêm antes e depois os múltiplos
+
+      
+      
