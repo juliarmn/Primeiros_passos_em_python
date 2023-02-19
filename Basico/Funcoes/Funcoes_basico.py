@@ -55,3 +55,11 @@ print(soma(1, 2, 44, 55, 6, 77, 8, 90))
 #O argumento se torna uma tupla
 # **: indica que pode passar quantos argumentos de palavra chave quiser
 
+def preco_prod(preco, **adicional)
+  if 'desconto' in adicional:
+    preco += 1 - adicional['desconto']
+  elif 'imposto' in adicional:
+    preco += (1 + adicional['imposto'])
+  return preco
+
+print('preco_prod(1000, desconto = 0.1))
