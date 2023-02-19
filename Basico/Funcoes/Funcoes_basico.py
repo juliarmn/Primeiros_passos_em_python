@@ -51,3 +51,7 @@ def soma(*num):
   return soma
 
 print(soma(1, 2, 44, 55, 6, 77, 8, 90))
+
+#O argumento se torna uma tupla
+# **: indica que pode passar quantos argumentos de palavra chave quiser
+
