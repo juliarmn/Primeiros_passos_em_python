@@ -31,3 +31,5 @@ var NDVI = img.expression('(infraVermelho - vermelho)/(infraVermelho + vermelho)
                             }
                            )
 Map.addLayer(NDVI, parametro, 'NDVI')
+//Pode usar essa expressão tbm:
+var NDVI = img.expression('(b(\'B5\') - b(\'B5\'))/(b(\'B5\') + b(\'B5\'))')
