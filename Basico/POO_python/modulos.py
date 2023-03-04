@@ -43,3 +43,21 @@ cores = {'azul': 300, 'rosa': 1900, 'vermelho': 550, 'amarelo': 980, 'lilás': 3
 
 aux = Counter(cores).most_common(3)
 print(aux)#Retorna uma lista com as tuplas dos 3 maiores
+
+#Gráficos:
+import matplotlib.pyplot as plt
+vendas = [2000, 345, 6665, 890, 998]
+meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio']
+plt.plot(meses, vendas)
+plt.ylabel('Vendas')
+plt.xlabel('Meses')
+plt.axis([0, 5, 0, 7000])                         
+plt.show()
+#Podemos importar o numpy para gerar números e dados
+import numpy as np
+vendas = np.random.randit(1000, 8000, 10)#gera um número inteiro entre o min, max e quantidade
+meses = np.arange(1, 11)
+#Tipo de gráfico
+plt.plot(meses, vendas, 'g^')
+plt.plot(meses, vendas, 'bo')
+plt.plot(meses, vendas, 'ro')#Vários tipos diferentes
