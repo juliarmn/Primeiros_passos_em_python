@@ -36,3 +36,10 @@ ano = data_atual.tm_year
 mes = data_atual.tm_mon
 #etc: tm_mday, tm_hour, tm_wday
 #Nenhum parâmetro -> data atual
+
+#Pegar os maiores valores de um dicionário
+from collections import Counter
+cores = {'azul': 300, 'rosa': 1900, 'vermelho': 550, 'amarelo': 980, 'lilás': 3900}
+
+aux = Counter(cores).most_common(3)
+print(aux)#Retorna uma lista com as tuplas dos 3 maiores
