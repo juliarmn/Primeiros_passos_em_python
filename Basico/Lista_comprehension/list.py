@@ -49,3 +49,5 @@ isento_2 = [item for i,item in enumerate(idade) if idade[i] >= idade_min]
 print(isento)
 #Não esquecer da estrutura:
 #list = [item if condição else outro_item for item in iterable]
+
+#List comprehension não serve só para criar listas
