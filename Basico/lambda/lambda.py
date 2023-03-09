@@ -48,3 +48,8 @@ multiplica_por_2 = lambda num: num * 2
 #Aplicações da Lambda expression:
 #Usar como parâmetro dentro de uma função
 #Passar como parâmetro uma função para um método
+
+#Função filter: filtra uma lista, ou tupla, etc
+#Resposta é todos os itens do iterable cuja a função retorna true
+#filter(function, iterable)
+#list(filter(lambda num: num > 2000, dicionario.items()))
