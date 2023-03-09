@@ -26,4 +26,25 @@ celulares.sort()
 print(celulares)
 #Com a key:
 celulares.sort(key = str.casefold)
-print(celulares)
+print(celulares)[
+#Ordenar uma lista de tuplas pelo segundo valor
+dicionario = {'gato': 7, 'cachorro': 5, 'passarinho': 8}
+lista_dici = list(dicionario.items())
+print(lista_dici)
+#Lá em cima cria uma função que devolve o segundo valor da tupla
+def segundo(tupla):
+    return tupla[1]
+lista_dici.sort(key=segundo)
+print(lista_dici)
+
+#Lambda expressions:
+#Funções anônimas
+#Ação única -> evitar fazer funções só para isso
+#minha_function = lambda parâmetro: expressão
+def multiplica_por_2(num):
+    return num * 2
+#Lambda:
+multiplica_por_2 = lambda num: num * 2
+#Aplicações da Lambda expression:
+#Usar como parâmetro dentro de uma função
+#Passar como parâmetro uma função para um método
