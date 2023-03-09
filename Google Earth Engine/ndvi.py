@@ -2,7 +2,7 @@ vermelho = 'B4'
 infra = 'B5'
 
 def ndvi(imagem):
-    ndvi = imagem.expression('(infra - vermelho) / (infra + vermelho)', {'infra': imagem.select(nir), 'vermelho': imagem.select(red)}).rename('ndvi')
+    ndvi = imagem.expression('(infra - vermelho) / (infra + vermelho)', {'infra': imagem.select(infra), 'vermelho': imagem.select(vermelho)}).rename('ndvi')
     return imagem.addBands(ndvi)
 
 colecao.map(ndvi)
