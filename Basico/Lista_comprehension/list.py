@@ -32,3 +32,18 @@ lista_ordenada.sort(reverse=True)
 #Unpacking com list comprehension, retornar ao original, mas ordenado:
 vendedores = [vendedores for vendas, vendedores in lista_ordenada]
 print(vendedores)
+
+#Filtrando com if:
+idade = [30, 70, 80, 60, 40, 20]
+#Com o for:
+isento = []
+idade_min = 60
+
+for i, item in enumerate(idade):
+    if idade[i] >= idade_min:
+        isento.append(idade[i])
+print(isento)
+
+#list comprehension:
+isento_2 = [item for i,item in enumerate(idade) if idade[i] >= idade_min]
+print(isento)
