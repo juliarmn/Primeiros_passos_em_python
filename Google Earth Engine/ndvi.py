@@ -17,3 +17,9 @@ print(imagem_corte.select(['ndvi']).getDownloadUrl())
 
 print()
 print(imagem_corte.select(['ndvi']).getThumbUrl({'min':-1, 'max':1}))
+
+#rgb:
+print(imagem_corte.select(['B4','B3','B2']).getDownloadUrl())
+
+print()
+print(imagem_corte.select(['B4','B3','B2']).getThumbUrl({'min':0, 'max':3000}))
